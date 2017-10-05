@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+input{
+    outline: none;
+}
+body{
+    margin: 0 auto; 
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    background-color: white;
+}
+.nav, .container{
+    width: 100%;
+    overflow: hidden;
+}
+.nav{
+    height: 135px;
+}
+.nav-left{
+    width: 135px;
+    height: 100px;
+    float: left;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+.nav-right{
+    width: 500px;
+    float: right;
+    text-align: right;
+    position: relative;
+    right: 60px;
+    top: 74px;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.menu a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+.logo{
+    font-size: 2.4em;
+    font-weight: 900;
+    line-height: 1em;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    border-bottom: 5px solid black;
+}
+.icon-30{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.search-box{
+    width: 310px;
+    height: 35px;
+    border: none; 
+    border-bottom: 2px solid black !important;
+    font-size: .9em;
+    position: relative;
+    bottom: 15px;
+}
+.product-container{
+    width: 1170px;  
+    padding-top: 60px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.product{
+    float: left;
+    padding: 0px 20px;
+}
+.product img{
+    width: 350px;
+}
+.product-detail, .about-shop, .more{
+    width: 225px;
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1px;
+    padding: 10px;
+    position: relative;
+}
+.product-detail{
+    text-transform: uppercase;
+    top: 385px;
+    background-color: black;
+    color: white;
+}
+.about-shop{
+    background-color: white;
+    top: 39vw;
+}
+.more{
+    /* top: 39vw; */
+    background-color: black;
+    color: white;
+    /* height: 50px; */
+    padding: 25px 10px;
+}
+.sub-title{
+    font-weight: 300;
+    font-size: .8em;
+    font-style: italic;
+}
+.content-left, .content-right{
+    width: 49.8vw;
+    height: 49.8vw; 
+    float: left;
+}
+.content{
+    text-align: left;
+    padding: 30px 40px;
+    font-size: 1.2em;
+}
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.6em;
+}
+.content p{
+    font-weight: 300;
+    line-height: 20px;
+}
+.about-bg{
+    background-image: url('http://localhost:8000/img/about.jpg');
+    background-size: cover;
+    filter: grayscale(100%);
+}
+.pd-t-70{
+    padding: 70px 0px;
+}
