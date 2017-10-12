@@ -25,7 +25,9 @@ Route::group(['prefix' => 'user'], function() {
 
 
 Route::group(['prefix' => 'product'], function() {
-    Route::get('/getallproduct', 'ProductController@GetAllProduct')->middleware('jwt.auth');
-    // Route::get('/getallproduct', 'ProductController@GetAllProduct');
+    // Route::get('/getallproduct', 'ProductController@GetAllProduct')->middleware('jwt.auth');
+    Route::get('/getallproduct', 'ProductController@GetAllProduct');
     Route::post('/addproduct', 'ProductController@AddProduct');
+    Route::post('/saveproductimage', 'ProductController@SaveProductImage');
+    Route::get('/productid', 'ProductController@ViewProduct');
 });

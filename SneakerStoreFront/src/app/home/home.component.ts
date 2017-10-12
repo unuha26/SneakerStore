@@ -13,11 +13,7 @@ export class HomeComponent implements OnInit {
   constructor( private http:Http) { }
 
   ngOnInit() {
-    var token = sessionStorage.getItem("token");
-    console.log("token " + token);
-    var hdr = new Headers({"Authorization" : "Bearer" + token});
-    var options = new RequestOptions({headers:hdr});
-    this.http.get("http://localhost:8000/api/product/getallproduct", options)
+    this.http.get("http://localhost:8000/api/product/getallproduct")
     .subscribe(
       result => {
         this.productList = result.json();
@@ -27,6 +23,20 @@ export class HomeComponent implements OnInit {
 
       }
     );
+    // var token = sessionStorage.getItem("token");
+    // console.log("token " + token);
+    // var hdr = new Headers({"Authorization" : "Bearer" + token});
+    // var options = new RequestOptions({headers:hdr});
+    // this.http.get("http://localhost:8000/api/product/getallproduct", options)
+    // .subscribe(
+    //   result => {
+    //     this.productList = result.json();
+    //     console.log(this.productList);
+    //   },
+    //   error =>{
+
+    //   }
+    // );
   }
 
 }

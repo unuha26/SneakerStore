@@ -20,11 +20,13 @@
 
 <div class="product-container">
   <div *ngFor="let p of productList" class="product">
-    <div class="product-detail">
-      <p>{{ p.name }}</p>
-      <p class="sub-title">{{ p.unit_price }}</p>
-    </div>
-    <img src="http://localhost:8000{{ p.image }}" alt="">
+    <a href="" routerLink="/productdetails/{{ p.id }}">
+      <div class="product-detail">
+        <p>{{ p.name }}</p>
+        <p class="sub-title">{{ p.unit_price }}</p>
+      </div>
+      <img src="http://localhost:8000{{ p.image }}" alt="">
+    </a>
   </div>
 </div>
 <div class="container pd-t-70">
